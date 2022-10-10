@@ -61,6 +61,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+  margin-right: 93px;
 
 }
 .logo-accent {
@@ -73,6 +74,7 @@ img {
 padding-top: 24px;
 padding-bottom: 25px;
 background-color: aqua;
+border: 1px solid #ECECEC;
 }
 
 .container {
@@ -82,11 +84,29 @@ padding-right: 15px;
 margin: 0 auto;
 outline: 2px solid tomato;
 }
+.header-container {
+  display: flex;
 
+}
 /* ---------NAVIGATION------------- */
 
 .link {
   text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+    gap: 50px;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.contacts.list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+    gap: 50px;
 }
 .site-nav .link {
   font-weight: 500;
@@ -169,6 +189,11 @@ outline: 2px solid tomato;
 
 /* -------------FEATURES-------------- */
 
+.features {
+  display: flex;
+  justify-content: center;
+}
+
 .features .feauture-title {
   font-size: 14px;
   line-height: 1.14;
@@ -186,7 +211,6 @@ outline: 2px solid tomato;
 }
 
 .section {
-  background-color: #2196f3;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -197,7 +221,6 @@ outline: 2px solid tomato;
 
 .section-title {
   margin-bottom: 50px;
-  padding-top: 94px;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -220,9 +243,16 @@ outline: 2px solid tomato;
 }
 
 .list.image {
-
+display: flex;
+justify-content: space-around;
 }
 /* -------------TEAM------------ */
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 .team-members {
 background: var(--secondary-background-color)
@@ -234,12 +264,14 @@ background: var(--secondary-background-color)
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+  text-align: center;
 }
 .team .team-member-position {
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .team-image {
   margin-bottom: 30px;
@@ -257,12 +289,7 @@ background: var(--secondary-background-color)
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
-margin-bottom: 20px;
-}
-.footer-address {
-  margin-bottom: 9px;
-}
+
 
 .address {
   font-size: 14px;
@@ -270,6 +297,10 @@ line-height: 1.7;
 letter-spacing: 0.03em;
 }
 
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
 .footer .address .link {
   display: inline-block;
   margin-bottom: 9px;
@@ -317,4 +348,17 @@ margin-bottom: 9px;
 
 .project-image {
   margin-bottom: 20px;
+}
+
+.nav-botton {
+  display: flex;
+  justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+
+}
+.projects-all {
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
