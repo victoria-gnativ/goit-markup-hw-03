@@ -45,6 +45,8 @@ address {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -68,22 +70,25 @@ img {
   color: var(--accent-color);
 }
 
-/* --------PAGE HEADER----------- */
 
-.header {
-padding-top: 24px;
-padding-bottom: 25px;
-background-color: aqua;
-border: 1px solid #ECECEC;
-}
-
+/* --------CONTAINER-------- */
 .container {
 width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-outline: 2px solid tomato;
+
 }
+
+/* --------PAGE HEADER----------- */
+
+.header {
+padding-top: 24px;
+padding-bottom: 25px;
+border: 1px solid #ECECEC;
+}
+
+
 .header-container {
   display: flex;
 
@@ -166,7 +171,6 @@ outline: 2px solid tomato;
 .button {
   padding: 10px 32px;
   border-radius: 4px;
-  cursor: pointer;
 }
 .hero .button {
   margin-bottom: 200px;
@@ -209,6 +213,7 @@ outline: 2px solid tomato;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+/* ---------SECTION---------- */
 
 .section {
   padding-top: 94px;
@@ -244,7 +249,11 @@ outline: 2px solid tomato;
 
 .list.image {
 display: flex;
-justify-content: space-around;
+gap: 30px;
+}
+
+.list-image {
+width: calc((100% - 60px) / 3);
 }
 /* -------------TEAM------------ */
 
@@ -254,10 +263,25 @@ justify-content: space-around;
   flex-wrap: wrap;
 }
 
+.team-card {
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: var(--white-color);
+}
+.team-card-img {
+
+}
+
+.team-card-text {
+
+}
+
 .team-members {
 background: var(--secondary-background-color)
 }
 .team .team-name {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -274,7 +298,7 @@ background: var(--secondary-background-color)
   text-align: center;
 }
 .team-image {
-  margin-bottom: 30px;
+  width: calc((100% - 90px) / 4);
 }
 
 /* ------------FOOTER-CONTACTS----------*/
@@ -323,6 +347,8 @@ margin-bottom: 9px;
   background-color: var(--secondary-background-color);
   color: var(--tittle-text-color);
   border-bottom: 0px;
+
+
 }
 
 .list .filter-button:hover,
@@ -332,12 +358,29 @@ margin-bottom: 9px;
 }
 /* ---------PORTFOLIO-PROJECTS------------ */
 
+.project-card {
+border: 1px solid #EEEEEE;
+
+}
+
+.project-card-img {
+margin-bottom: 20px;
+}
+
+.project-card-text {
+padding-left: 24px;
+padding-right: 24px;
+padding-bottom: 20px;
+
+}
+
 .projects-all .project-name {
     margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--tittle-text-color);
+
 }
 .projects-all .project-type {
   padding-bottom: 20px;
@@ -347,7 +390,7 @@ margin-bottom: 9px;
 }
 
 .project-image {
-  margin-bottom: 20px;
+
 }
 
 .nav-botton {
@@ -359,6 +402,9 @@ margin-bottom: 9px;
 }
 .projects-all {
     display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: space-around;
 }
+
