@@ -15,7 +15,6 @@
 /* головний колір фону #F5F5F5; */
 /* другорядний колір фону #F5F4FA; #2F303A */
 
-
 /* -------GENERAL------- */
 body {
   background-color: var(--white-color);
@@ -23,6 +22,11 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 p,
 h1,
 h2,
@@ -64,34 +68,29 @@ img {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
   margin-right: 93px;
-
 }
 .logo-accent {
   color: var(--accent-color);
 }
 
-
 /* --------CONTAINER-------- */
 .container {
-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin: 0 auto;
-
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 /* --------PAGE HEADER----------- */
 
 .header {
-padding-top: 24px;
-padding-bottom: 25px;
-border: 1px solid #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
-
 
 .header-container {
   display: flex;
-
 }
 /* ---------NAVIGATION------------- */
 
@@ -101,7 +100,7 @@ border: 1px solid #ECECEC;
 
 .site-nav {
   display: flex;
-    gap: 50px;
+  gap: 50px;
 }
 .header-navigation {
   display: flex;
@@ -111,7 +110,7 @@ border: 1px solid #ECECEC;
   display: flex;
   align-items: center;
   margin-left: auto;
-    gap: 50px;
+  gap: 50px;
 }
 .site-nav .link {
   font-weight: 500;
@@ -136,7 +135,6 @@ border: 1px solid #ECECEC;
 }
 
 .contacts .link {
-  
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -151,7 +149,7 @@ border: 1px solid #ECECEC;
 .hero {
   background-color: var(--hero-background-color);
   text-align: center;
-
+  padding: 200px 0;
 }
 .hero-title {
   color: var(--white-color);
@@ -163,7 +161,6 @@ border: 1px solid #ECECEC;
   text-transform: uppercase;
   margin: 0px auto;
   width: 696px;
-
 }
 /* ---------HERO-BUTTON---------- */
 .button {
@@ -190,22 +187,20 @@ border: 1px solid #ECECEC;
 
 /* -------------FEATURES-------------- */
 .features-card {
-width: 270px;
-outline: 2px solid tomato;
+  width: 270px;
+  outline: 2px solid tomato;
 }
 
 .features.list {
   display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .card {
   width: 270px;
 }
 
 .qualities {
-
-
 }
 
 .features .feauture-title {
@@ -215,7 +210,6 @@ justify-content: space-between;
   text-transform: uppercase;
   color: var(--tittle-text-color);
   margin-bottom: 10px;
-
 }
 
 .features .feature-text {
@@ -225,12 +219,8 @@ justify-content: space-between;
 }
 /* ---------SECTION---------- */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .section.offer {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .section.no-padding {
@@ -239,7 +229,6 @@ justify-content: space-between;
 }
 
 .section-title {
-  
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -247,7 +236,6 @@ justify-content: space-between;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
-
 
 .visually-hidden {
   position: absolute;
@@ -263,12 +251,12 @@ justify-content: space-between;
 }
 
 .list.image {
-display: flex;
-gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .list-image {
-width: calc((100% - 60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 /* -------------TEAM------------ */
 
@@ -279,24 +267,22 @@ width: calc((100% - 60px) / 3);
 }
 
 .team-card {
-
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
 }
 .team-card-img {
-
 }
 
 .team-card-text {
-padding: 30px 0;
+  padding: 30px 0;
 }
 
 .team-members {
-background: var(--secondary-background-color)
+  background: var(--secondary-background-color);
 }
 .team .team-name {
-
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -306,7 +292,6 @@ background: var(--secondary-background-color)
   text-align: center;
 }
 .team .team-member-position {
-
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -327,35 +312,31 @@ background: var(--secondary-background-color)
   color: var(--white-color);
 }
 
-
 .address > .contacts {
   margin-bottom: 9px;
-
 }
 .address {
   font-size: 14px;
-line-height: 1.7;
-letter-spacing: 0.03em;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 .footer .logo {
   display: inline-block;
-  margin-bottom: 0px;
   margin-right: 0px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer .address .link {
   display: inline-block;
-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
 }
 .footer .address .location {
-color: var(--white-color);
-display: inline-block;
-
+  color: var(--white-color);
+  display: inline-block;
 }
 /* ----------PORTFOLIO-FILTER------------ */
 
@@ -365,17 +346,14 @@ display: inline-block;
   background-color: var(--secondary-background-color);
   color: var(--tittle-text-color);
   border: none;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-/* identical to box height, or 162% */
-text-align: center;
-letter-spacing: 0.03em;
-
-
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .list .filter-button:hover,
@@ -386,51 +364,38 @@ letter-spacing: 0.03em;
 /* ---------PORTFOLIO-PROJECTS------------ */
 
 .project-card {
-border: 1px solid #EEEEEE;
-
-}
-
-.project-card-img {
-margin-bottom: 20px;
+  border: 1px solid #eeeeee;
 }
 
 .project-card-text {
-padding-left: 24px;
-padding-right: 24px;
-padding-bottom: 20px;
-
+  padding: 20px 24px;
 }
 
 .projects-all .project-name {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--tittle-text-color);
-
 }
 .projects-all .project-type {
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
 .project-image {
-width: calc((100%-60px)/3);
+  width: calc((100% - 60px) / 3);
 }
 
 .nav-botton {
   display: flex;
   justify-content: center;
-    margin-bottom: 50px;
-    gap: 8px;
-
+  margin-bottom: 50px;
+  gap: 8px;
 }
 .projects-all {
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
-gap: 30px;
-
+  gap: 30px;
 }
-
